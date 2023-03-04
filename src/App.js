@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import CurrentLocation from './Components/CurrentLocation';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+     <>
+       <div className="container">
+        <CurrentLocation />
+      </div>
+
+      <div className="footer-info">
+        <a href="https://github.com/CoderPoojam">
+          Download Source Code
+        </a>{" "}
+        | Developed by{" "}
+        <a target="_blank" href="https://itsmepooja.wixsite.com/home">
+         Pooja Mandule
         </a>
-      </header>
+      </div>
+     </>
     </div>
   );
 }

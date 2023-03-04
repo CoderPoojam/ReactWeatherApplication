@@ -28,6 +28,249 @@
   color: #61dafb;
 }
 
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url("./Images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  width: 65%;
+  height: 80vh;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.73);
+}
+
+.city {
+  width: 60%;
+  height: 100%;
+  float: left;
+  background: url("./Images/city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 500px;
+  position: relative;
+  background-position-x: -30px;
+}
+
+.title {
+  float: right;
+  padding: 30px 30px 0 0;
+}
+
+.title h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.title h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #eee;
+  margin-top: 0px;
+  text-align: right;
+}
+
+.date-time {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 90%;
+  padding: 0 30px 10px 30px;
+}
+
+div#txt {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.dmy {
+  float: left;
+  text-align: left;
+  position: absolute;
+}
+
+.temperature {
+  width: 50%;
+  float: right;
+  position: relative;
+  left: 10px;
+}
+
+.temperature p {
+  font-size: 80px;
+  font-weight: 100;
+  margin: 0 40px;
+}
+
+.temperature p span {
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.forecast {
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+.forecast-icon {
+  padding: 25px 0;
+  /* background: white; */
+}
+
+.today-weather h3 {
+  text-transform: capitalize;
+  font-size: 50px;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto 10px;
+  padding-bottom: 10px;
+  border-width: thin;
+  border-bottom: 1px solid #eee;
+}
+
+.today-weather ul li {
+  width: 74%;
+  margin: 0 auto;
+  line-height: 39px;
+  border-width: thin;
+  border-bottom: 1px solid #777;
+  color: #eee;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.today-weather ul li span {
+  float: right;
+  padding-right: 10px;
+}
+
+.today-weather ul li:nth-child(5) {
+  border-bottom: none;
+}
+
+.footer {
+  padding-bottom: 20px;
+}
+
+.copyright p {
+  color: #fff;
+}
+
+.copyright p {
+  color: #fff;
+}
+
+.copyright p a {
+  color: #fff;
+}
+
+.cityHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.search-box .img-box {
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 32px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+.search-box img {
+  width: 60%;
+  cursor: pointer;
+}
+.search-box .search-bar {
+  border: none;
+  padding: 10px 11px;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid;
+  font-size: 16px;
+  
+}
+.search-box .search-bar::placeholder {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.search-bar:focus {
+  outline: none;
+  border-bottom: 1px solid gray;
+  transition: all 1s ease-in-out;
+}
+.mb-icon {
+  height: 100%;
+  position: absolute;
+  top: 34%;
+  left: 36%;
+  z-index: 1;
+  display: none;
+}
+.mb-icon p {
+  color: white;
+  width: fit-content;
+  position: relative;
+  left: 24%;
+  top: 2%;
+  font-size: 25px;
+}
+.footer-info {
+  color: white;
+}
+.footer-info a {
+  color: floralwhite;
+  font-weight: bold;
+}
+.hh_button {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to right, #ff8a00, #da1b60);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+  margin: 0px;
+  position: absolute;
+  right: 20px;
+  top: 1.5%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
